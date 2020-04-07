@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Crossroad</title>
+<title>Crossroad v2</title>
 <style title="Twine CSS">@-webkit-keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes appear{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@-webkit-keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@-webkit-keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes box-flash{0%{background-color:white;color:white}}@keyframes box-flash{0%{background-color:white;color:white}}@-webkit-keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@-webkit-keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@-webkit-keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@-webkit-keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@-webkit-keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@-webkit-keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}.debug-mode tw-expression[type=hookref]{background-color:rgba(115,123,140,0.15)}.debug-mode tw-expression[type=hookref]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"?" attr(name)}.debug-mode tw-expression[type=variable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+0){background-color:rgba(136,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(2n+1){background-color:rgba(102,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+2){background-color:rgba(102,153,136,0.15)}.debug-mode tw-expression[type=macro][name="for"],.debug-mode tw-expression[type=macro][name="loop"],.debug-mode tw-expression[type=macro][name="print"],.debug-mode tw-expression[type=macro][name="enchant"],.debug-mode tw-expression[type=macro][name="display"]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expression[type=macro][name="unless"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="elseif"],.debug-mode tw-expression[type=macro][name="elseif"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="else"],.debug-mode tw-expression[type=macro][name="else"]+tw-hook:not([name]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro][name="hidden"],.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro][name="hidden"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="either"],.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="dm"],.debug-mode tw-expression[type=macro][name="ds"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode tw-expression[type=macro][name^="sub"],.debug-mode tw-expression[type=macro][name="altered"],.debug-mode tw-expression[type=macro][name="count"],.debug-mode tw-expression[type=macro][name^="data"],.debug-mode tw-expression[type=macro][name="find"],.debug-mode tw-expression[type=macro][name$="ed"],.debug-mode tw-expression[type=macro][name$="-pass"],.debug-mode tw-expression[type=macro][name="range"],.debug-mode tw-expression[type=macro][name^="num"],.debug-mode tw-expression[type=macro][name^="str"],.debug-mode tw-expression[type=macro][name="text"],.debug-mode tw-expression[type=macro][name^="lower"],.debug-mode tw-expression[type=macro][name^="upper"],.debug-mode tw-expression[type=macro][name="words"],.debug-mode tw-expression[type=macro][name="ceil"],.debug-mode tw-expression[type=macro][name="floor"],.debug-mode tw-expression[type=macro][name="random"],.debug-mode tw-expression[type=macro][name="abs"],.debug-mode tw-expression[type=macro][name="cos"],.debug-mode tw-expression[type=macro][name="exp"],.debug-mode tw-expression[type=macro][name^="log"],.debug-mode tw-expression[type=macro][name="max"],.debug-mode tw-expression[type=macro][name="min"],.debug-mode tw-expression[type=macro][name="pow"],.debug-mode tw-expression[type=macro][name="sign"],.debug-mode tw-expression[type=macro][name="sin"],.debug-mode tw-expression[type=macro][name="sqrt"],.debug-mode tw-expression[type=macro][name="tan"],.debug-mode tw-expression[type=macro][name="round"],.debug-mode tw-expression[type=macro][name^="hsl"],.debug-mode tw-expression[type=macro][name^="rgb"]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name$="-game"],.debug-mode tw-expression[type=macro][name="move"],.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name$="-link"],.debug-mode tw-expression[type=macro][name="dropdown"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name="goto"],.debug-mode tw-expression[type=macro][name="undo"],.debug-mode tw-expression[type=macro][name^="mouseo"]{background-color:rgba(32,191,223,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name="show"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="event"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,32,223,0.2) !important}.debug-mode tw-expression[type=macro][name="align"],.debug-mode tw-expression[type=macro][name^="colo"],.debug-mode tw-expression[type=macro][name="background"],.debug-mode tw-expression[type=macro][name="css"],.debug-mode tw-expression[type=macro][name="font"],.debug-mode tw-expression[type=macro][name="hook"],.debug-mode tw-expression[type=macro][name$="-style"],.debug-mode tw-expression[type=macro][name^="text-"],.debug-mode tw-expression[type=macro][name^="transition"],.debug-mode tw-expression[type=macro][name^="t8n"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;-webkit-animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}@-webkit-keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 1em 1em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel table{border-spacing:0px}tw-debugger .variable-row{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;flex-shrink:0}tw-debugger .variable-row:nth-child(2n){background:#EEE}tw-debugger .variable-name{display:inline-block;width:50%}tw-debugger .temporary-variable-scope{opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope::before{content:" in "}tw-debugger .global::before{content:"$"}tw-debugger .temporary::before{content:"_"}tw-debugger .variable-path{opacity:0.4}tw-debugger .variable-value{display:inline-block;width:50%}tw-debugger .error-row{background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row *{padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .panel-source{font-family:monospace;overflow-x:scroll;white-space:pre}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-dialog{z-index:999997;position:fixed;left:auto;right:auto;bottom:auto;top:auto;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block;max-width:50vw;max-height:75vh;overflow:hidden}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage tw-enchantment[style^="color"] tw-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-link:not(:hover),tw-passage tw-enchantment[style^="color"] .enchantment-link:not(:hover),tw-passage tw-enchantment[style*=" color"] .enchantment-link:not(:hover){color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage tw-enchantment[style^="color"] .visited:not(:hover),tw-passage tw-enchantment[style*=" color"] .visited:not(:hover){color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage tw-enchantment[style^="color"] tw-broken-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-broken-link:not(:hover){color:inherit}.enchantment-mouseover{border-bottom:1px dashed #666}.enchantment-mouseout{border:rgba(64,149,191,0.25) 1px solid}.enchantment-mouseout:hover{background-color:rgba(64,149,191,0.25);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{box-shadow:inset 0 0 0 0.5vmax;display:block;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock:hover{color:rgba(0,191,255,0.5)}.enchantment-clickblock:active{color:rgba(222,78,59,0.5)}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 20%;margin:0;overflow:hidden;background-color:#000;color:#fff}tw-story br[data-cons]{display:block;height:0;margin:0.8ex 0}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-passage{display:block}tw-sidebar{left:-5em;width:3em;position:absolute;text-align:center;display:block}tw-icon{display:block;margin:0.5em 0;opacity:0.2;font-size:2.75em}tw-icon:hover{opacity:0.4}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help}tw-error.error{background-color:rgba(223,58,190,0.4);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.4);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-error-explanation-button{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;opacity:0.5}tw-error-explanation-button .folddown-arrowhead{display:inline-block}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate;-webkit-animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}tw-outline{color:white;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000}tw-shadow{text-shadow:0.08em 0.08em 0.08em #000}tw-emboss{text-shadow:0.08em 0.08em 0em #000;color:white}tw-condense{letter-spacing:-0.08em}tw-expand{letter-spacing:0.1em}tw-blur{color:transparent;text-shadow:0em 0em 0.08em #000}tw-blurrier{color:transparent;text-shadow:0em 0em 0.2em #000}tw-blurrier::selection{background-color:transparent;color:transparent}tw-blurrier::-moz-selection{background-color:transparent;color:transparent}tw-smear{color:transparent;text-shadow:0em 0em 0.02em rgba(0,0,0,0.75),-0.2em 0em 0.5em rgba(0,0,0,0.5),0.2em 0em 0.5em rgba(0,0,0,0.5)}tw-mirror{display:inline-block;transform:scaleX(-1);-webkit-transform:scaleX(-1)}tw-upside-down{display:inline-block;transform:scaleY(-1);-webkit-transform:scaleY(-1)}tw-fade-in-out{text-decoration:none;animation:fade-in-out 2s ease-in-out infinite alternate;-webkit-animation:fade-in-out 2s ease-in-out infinite alternate}tw-rumble{-webkit-animation:rumble linear 0.1s 0s infinite;animation:rumble linear 0.1s 0s infinite;display:inline-block}tw-shudder{-webkit-animation:shudder linear 0.1s 0s infinite;animation:shudder linear 0.1s 0s infinite;display:inline-block}tw-shudder-in{animation:shudder-in 1s ease-out;-webkit-animation:shudder-in 1s ease-out}.transition-in{-webkit-animation:appear 0ms step-start;animation:appear 0ms step-start}.transition-out{-webkit-animation:appear 0ms step-end;animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=dissolve].transition-out{-webkit-animation:appear .8s reverse;animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block;-webkit-animation:shudder-in .8s;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block;-webkit-animation:shudder-in .8s reverse;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block;-webkit-animation:rumble-in .8s;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block;-webkit-animation:rumble-in .8s reverse;animation:rumble-in .8s reverse}[data-t8n^=boxflash].transition-in{-webkit-animation:box-flash .8s;animation:box-flash .8s}[data-t8n^=pulse].transition-in{-webkit-animation:pulse .8s;animation:pulse .8s;display:inline-block}[data-t8n^=pulse].transition-out{-webkit-animation:pulse .8s reverse;animation:pulse .8s reverse;display:inline-block}[data-t8n^=slideleft].transition-in{-webkit-animation:slide-left .8s;animation:slide-left .8s;display:inline-block}[data-t8n^=slideleft].transition-out{-webkit-animation:slide-right .8s reverse;animation:slide-right .8s reverse;display:inline-block}[data-t8n^=slideright].transition-in{-webkit-animation:slide-right .8s;animation:slide-right .8s;display:inline-block}[data-t8n^=slideright].transition-out{-webkit-animation:slide-left .8s reverse;animation:slide-left .8s reverse;display:inline-block}[data-t8n^=slideup].transition-in{-webkit-animation:slide-up .8s;animation:slide-up .8s;display:inline-block}[data-t8n^=slideup].transition-out{-webkit-animation:slide-down .8s reverse;animation:slide-down .8s reverse;display:inline-block}[data-t8n^=slidedown].transition-in{-webkit-animation:slide-down .8s;animation:slide-down .8s;display:inline-block}[data-t8n^=slidedown].transition-out{-webkit-animation:slide-up .8s reverse;animation:slide-up .8s reverse;display:inline-block}[data-t8n^=flicker].transition-in{-webkit-animation:flicker .8s;animation:flicker .8s}[data-t8n^=flicker].transition-out{-webkit-animation:flicker .8s reverse;animation:flicker .8s reverse}[data-t8n$=fast]{animation-duration:.4s;-webkit-animation-duration:.4s}[data-t8n$=slow]{animation-duration:1.6s;-webkit-animation-duration:1.6s}
 </style>
 </head>
@@ -11,7 +11,24 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Crossroad" startnode="2" creator="Twine" creator-version="2.3.5" ifid="3A9D6E0C-2A73-43C1-9F1F-481158CAFA23" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Next day" tags="" position="601,980" size="100,100">You two are having breakfast at one of the places you found. The food was delicious and weather was also clear. Thinking about the places you want to go, you know you cannot possibly visit all of them, so you ask Taylor which ones to go after breakfast.
+<tw-storydata name="Crossroad v2" startnode="2" creator="Twine" creator-version="2.3.5" ifid="B03CC9D8-AFBE-47CD-ACEE-63D0D3E4A78E" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-out {
+    animation: fadeOut;
+	animation-duration: 10s;
+	animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {
+	opacity:0;
+	visibility: hidden;
+  }
+}
+
+.strike-through {
+  color: #4169e2; 
+  font-weight: bold; 
+  text-decoration: line-through
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Next day" tags="" position="521,1422" size="100,100">You two are having breakfast at one of the places you found. The food was delicious and weather was also clear. Thinking about the places you want to go, you know you cannot possibly visit all of them, so you ask Taylor which ones to go after breakfast.
 
 &quot;Actually...I think I will need some time to do some school work today and tomorrow.&quot;
 
@@ -22,7 +39,7 @@
 Taylor adds, &quot;You can totally go to some of the places without me if you like. I can be with you for the rest of the time.&quot;
 
 (if: $communication is &#39;i&#39;)[
-[[That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have book on my list for a long time. Finally I can cross it off -&gt; compromise]]
+[[That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have book on my list for a long time. Finally I can cross it off. -&gt; compromise]]
 
 [[That&#39;s fine. I will just walk around the city after this. -&gt; walk]]
 
@@ -34,7 +51,7 @@ Taylor adds, &quot;You can totally go to some of the places without me if you li
 [[That&#39;s fine. I will just walk around the city after this. -&gt; walk]]
 
 [[Okay, but you know this is not planned right? We both agreed to spend time with each other, for just one weekend. -&gt; not planned]]
-]</tw-passagedata><tw-passagedata pid="2" name="Welcome" tags="" position="599.5,31.5" size="100,100">Hey player.
+]</tw-passagedata><tw-passagedata pid="2" name="Welcome" tags="" position="599,31" size="100,100">Hey traveler,
 
 Before the story starts, let me ask you two questions about yourself. I hope you would better enjoy the story by letting me know you better.
 
@@ -42,23 +59,23 @@ First question.
 
 Which of the two do you think better fit your ideal of a relationship?
 [[An ideal relationship is two individuals fulfilling themselves by being with each other -&gt; individualist]]
-[[An ideal relationship is two individuals considering each other as part of self -&gt; companion]]</tw-passagedata><tw-passagedata pid="3" name=" individualist" tags="" position="484,156.5" size="100,100">(set: $relationshipView to 2)
+[[An ideal relationship is two individuals considering each other as part of a greater &quot;self&quot; -&gt; companion]]</tw-passagedata><tw-passagedata pid="3" name=" individualist" tags="" position="484,156" size="100,100">(set: $relationshipView to 2)
 
 Next question.
 
-Which of the two better describes your communication style with your partner?
+Which of the two do you think better describe the ideal communication style between partners?
 [[I want to openly discuss any issues or concerns with my partner -&gt; open]]
-[[Some things are not worth the difficult conversation, and I&#39;m fine with leaving them unsaid -&gt; implicit]]</tw-passagedata><tw-passagedata pid="4" name=" companion" tags="" position="718,155.5" size="100,100">(set: $relationshipView to 1)
+[[Some things are not worth the difficult conversation, and I&#39;m fine with leaving them unsaid -&gt; implicit]]</tw-passagedata><tw-passagedata pid="4" name=" companion" tags="" position="718,155" size="100,100">(set: $relationshipView to 1)
 
 Next question.
 
-Which of the two better describes your communication style with your partner?
+Which of the two do you think better describe the ideal communication style between partners?
 [[I want to openly discuss any issues or concerns with my partner -&gt; open]]
-[[Some things are not worth the difficult conversation, and I&#39;m fine with leaving them unsaid -&gt; implicit]]</tw-passagedata><tw-passagedata pid="5" name=" open" tags="" position="479,287.5" size="100,100">(set: $communication to &#39;o&#39;)
+[[Some things are not worth the difficult conversation, and I&#39;m fine with leaving them unsaid -&gt; implicit]]</tw-passagedata><tw-passagedata pid="5" name=" open" tags="" position="479,287" size="100,100">(set: $communication to &#39;o&#39;)
 
-Now let the story [[start -&gt; Start]].</tw-passagedata><tw-passagedata pid="6" name=" implicit" tags="" position="731,290.5" size="100,100">(set: $communication to &#39;i&#39;)
+Now let the story [[start -&gt; Start]].</tw-passagedata><tw-passagedata pid="6" name=" implicit" tags="" position="731,290" size="100,100">(set: $communication to &#39;i&#39;)
 
-Now let the story [[start -&gt; Start]].</tw-passagedata><tw-passagedata pid="7" name=" Start" tags="" position="605,424.5" size="100,100">(set: 
+Now let the story [[start -&gt; Start]].</tw-passagedata><tw-passagedata pid="7" name=" Start" tags="" position="604,406" size="100,100">(set: 
 	$playerSatisfaction to 10, 
 	$taylorSatisfaction to 10,
 	$timeSpentTogether to 0
@@ -66,38 +83,35 @@ Now let the story [[start -&gt; Start]].</tw-passagedata><tw-passagedata pid="7"
 
 Your plane just landed.
 
-You immediately turn off airplane mode on your phone, expecting a message from your partner, Taylor. You keep a long-distance relationship. You work in Los Angeles, and Taylor is a grduate student in New York. A conference in Chicago gathers both of you here -- Taylor comes to attend the conference, and you come to spend the weekend with Taylor. 
+You immediately turn off airplane mode on your phone, and a message from Taylor comes. &quot;I&#39;ve checked in the hotel already. Just call me when you land. Can&#39;t wait to see you!&quot;
 
-It is Friday night, and you headed to the airport directly from your office. Taylor got here early in the morning, and should have checked in your hotel.
+Taylor is your partner, and you keep a long-distance relationship. Here you are, in Chicago, to spend a weekend together. 
 
-This is your first time to Chicago. You looked up many great restaurants to eat, places to go. You have great expectations.
+You call, but no response. It&#39;s almost midnight now.
 
-Taylor&#39;s message come, as expected, asking you to just call when you arrive. You call, but no response.
+[[Wait where are are and keep calling.]]
+[[Get a Uber to hotel first. -&gt; to the hotel]]</tw-passagedata><tw-passagedata pid="8" name="in" tags="hard-coded-for-prototype" position="604,1098" size="100,100">(set: $communication to &#39;i&#39;)
+(set: $relationshipView to 1)
 
-&quot;Taylor could just be busy with something&quot;, you think. You get an Uber [[to the hotel]].</tw-passagedata><tw-passagedata pid="8" name="to the hotel" tags="refine-writing" position="605,549.5" size="100,100">You keep calling on the way, but still no response. You know Taylor&#39;s phone is always in silent mode, so you are not too worried. 
-
-The Uber arrives at the hotel. You asks the front desk lady for the Taylor&#39;s room number. Of course she won&#39;t give it to you without Taylor&#39;s permission, but she agrees to call Taylor&#39;s room -- still no answer.
-
-The room phone cannot be silent, and this is when you start to worry. You call, you talk to the front desk lady, you sit down, you stand up to walk around the hotel lobby, and you call again. After 15 minutes of repeating these useless steps and random hypotheses popping off your head, the front desk lady finally agree to have a security guard escort you to the room and knock the door for you.
-
-Knock, knock...
-
-Knock, knock...
-
-After the thrid round of knocking, finally there is sound from inside. Taylor opens the door.
-
-You thank the security guard, and Taylor let you [[in]].</tw-passagedata><tw-passagedata pid="9" name="in" tags="hard-coded-for-prototype" position="604,680.5" size="100,100">Taylor gives you a big hug. Chicago is kind of cold, and you were really worried too, so the hug feels very warm and comforting.
+Taylor gives you a big hug. Chicago is kind of cold, so the hug feels very warm and comforting.
 
 &quot;I&#39;m sorry I fell asleep. Were you worried?&quot; 
 
-You know Taylor is not lying just by the messy hair and droopy eyes. An early flight from New York to Chicago was not easy, and a full day of conference and events immediately follows after. Taylor is probably indeed exhausted, but how room phone should be pretty loud, how could Taylor miss that?
+You know Taylor took an early morning flight from New York to Chicago today, and a full day of conference and events immediately follows after. That must be exhausting, but you immediately headed to the airport after work too and it&#39;s almost 2 AM in the morning.
 
 (if: $communication is &#39;i&#39;)[
-[[No worries at all! I knew you must be exhausted, so I figured a way to let myself in. -&gt; condolence]]
+	(if: $relationshipView is 1)[
+		[[No worries at all! I knew you must be exhausted, so I figured a way to let myself in. -&gt; condolence]]
+	  	&lt;div class=&quot;fade-out&quot;&gt;
+	  		[[I was a little worried but that&#39;s okay! I&#39;m pretty tired. Let&#39;s just go to sleep. -&gt; neutral]]
+		&lt;/div&gt;
+		&lt;div class=&quot;strike-through&quot;&gt;[Yeah I was so worried! I know you are probably tired now, but I think we should talk about this sometime. At least you could turn up the sound of your phone before going to sleep.]
+		&lt;/div&gt;	
+	] 
+	(else:) [
+	  [[No worries at all! I knew you must be exhausted, so I figured a way to let myself in. -&gt; condolence]]
 
-[[I was a little worried but that&#39;s okay! I&#39;m pretty tired too. Let&#39;s just go to sleep. -&gt; neutral]]
-
-~~Yeah I was so worried! I know you are probably tired now, but I think we should talk about this sometime. At least you could turn up the sound of your phone before going to sleep.~~
+	  [[I was a little worried but that&#39;s okay! I&#39;m pretty tired. Let&#39;s just go to sleep. -&gt; neutral]]]
 ]
 (else:)[
 ~~No worries at all! I knew you must be exhausted, so I figured a way to let myself in.~~
@@ -105,27 +119,32 @@ You know Taylor is not lying just by the messy hair and droopy eyes. An early fl
 [[I was a little worried but that&#39;s okay! I&#39;m pretty tired too. Let&#39;s just go to sleep. -&gt; neutral]]
 
 [[Yeah I was so worried! I know you are probably tired now, but I think we should talk about this sometime. At least you could turn up the sound of your phone before going to sleep. -&gt; demanding]]
-]</tw-passagedata><tw-passagedata pid="10" name=" condolence" tags="" position="454,830.5" size="100,100">(set: 
-	$playerSatifaction to $playerSatifaction-3,
-	$timeSpentTogether to 1
+]</tw-passagedata><tw-passagedata pid="9" name=" condolence" tags="" position="375,1300" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-3,
+	$timeSpentTogether to $timeSpentTogether+1
 )
 
 &quot;Oh really? How did you get them take you here?&quot;
 
-You tell Taylor about what you did in the lobby, omitting the worrying part of course. A glimpse of uneasiness flows through your mind while you speak -- &quot;I was tired too&quot;, you think to yourself, &quot;and I was really worried.&quot; You didn&#39;t express any of these eventually.
+&quot;I showed them my credit card that I used to book this room, and they just sent a security guard to escort me here.&quot;
+
+You make this sound easy but a glimpse of uneasiness arises -- &quot;I was really worried.&quot; You didn&#39;t express any of these eventually.
 
 You haven&#39;t met each other for a long time, so you talked for a while even though both of you are tired, and you fall asleep together.
 
-[[Next day]]</tw-passagedata><tw-passagedata pid="11" name=" neutral" tags="omitted-for-prototype" position="605,833.5" size="100,100">(set: 
-	$playerSatifaction to $playerSatifaction-1,
-	$taylorSatisfaction to $taylorSatisfaction-1,
-	$timeSpentTogether to 0
+[[Next day]]</tw-passagedata><tw-passagedata pid="10" name=" neutral" tags="omitted-for-prototype" position="526,1279" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-1,
+	$taylorSatisfaction to $taylorSatisfaction-1
 )
 
-[[Next day]]</tw-passagedata><tw-passagedata pid="12" name=" demanding" tags="" position="754,830.5" size="100,100">(set: 
-	$playerSatifaction to $playerSatifaction-1,
+&quot;Yeah I&#39;m tired too. Let&#39;s just rest.&quot;
+
+No words after this while you lie on bed silently, back to back. It takes you quite a while to fall asleep.
+
+[[Next day]]</tw-passagedata><tw-passagedata pid="11" name=" demanding" tags="" position="675,1276" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-1,
 	$taylorSatisfaction to $taylorSatisfaction-3,
-	$timeSpentTogether to 1
+	$timeSpentTogether to $timeSpentTogether+1
 )
 
 &quot;I&#39;m sorry I was just really tired.&quot; Taylor apologizes, &quot;I was holding my phone waiting for you to land, but I just fell asleep.&quot;
@@ -138,13 +157,288 @@ You haven&#39;t met each other for a long time, so you talked for a while even t
 
 You haven&#39;t met each other for a long time, so you spend some time catch up and fall asleep together.
 
-[[Next day]]</tw-passagedata><tw-passagedata pid="13" name=" compromise" tags="" position="458,1121" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name=" walk" tags="" position="606,1121" size="100,100">(set: 
-	$playerSatifaction to $playerSatifaction-1,
-	$taylorSatisfaction to $taylorSatisfaction-1,
-	$timeSpentTogether to 0
+[[Next day]]</tw-passagedata><tw-passagedata pid="12" name=" compromise" tags="" position="377,1561" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-3,
+	$timeSpentTogether to $timeSpentTogether+2
 )
 
-</tw-passagedata><tw-passagedata pid="15" name=" not planned" tags="" position="750,1122" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+&quot;Really?! Thank you so much!&quot;
+
+&quot;Not an issue. Let&#39;s find a nice cafe nearby!&quot;
+
+In the cafe, while Taylor is studying, you are mostly just holding your book and staring outside of the window. The coffee brewing smell is nice, and the morning sunshine cast onto the desk, onto Taylor, and onto your book also feels warm. The book is indeed on your list, and you do want to read it some time, but not right now -- you just cannot concentrate on it. Right now, looking at people walking by and going to places, you almost don&#39;t know if you want to join them. You ask yourself, shouldn&#39;t you feel calm, peaceful, and content to spend time reading a good book, in a nice place, with Taylor? You are not sure if you are actually feeling that way or you just tell yourself you should feel that way. Maybe something is missing.
+
+&quot;Hey.&quot; Taylor calls you back from random thoughts, &quot;I&#39;m done. Let&#39;s go somewhere!&quot;
+
+&quot;Is it already 4 hours?&quot;
+
+&quot;Yeah, almost. Were you just day-dreaming for 4 hours?&quot; Taylor laughs.
+
+You look around. the morning sunshine has turned into afternoon sunshine. It has indeed been a while.
+
+&quot;Haha maybe. Where do you want to go?&quot;
+
+&quot;Up to you. Anywhere you feel like going the most! The rest of the day is ours!&quot; Taylor has a high spirit. &quot;But let&#39;s finish before 7. I have a [[surprise]] for you.&quot;</tw-passagedata><tw-passagedata pid="13" name=" walk" tags="" position="524,1571" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-2,
+	$taylorSatisfaction to $taylorSatisfaction-2
+)
+
+&quot;Sounds good! I think I&#39;m just gonna find a nice cafe and study there, and I will just call you when I&#39;m done.&quot;
+
+&quot;Okay.&quot;
+
+&quot;Do you know where do you want to go?&quot;
+
+&quot;Not really. I will probably just walk around and see where the city takes me. You know, let the city happen to me.&quot;
+
+&quot;Haha that&#39;s nice!&quot;
+
+After breakfast, you and Taylor head to different directions. You are doing exactly what you said -- let the city happen to you. Its wind, its chill, its shadows between the high-raise buildings, and its busy passengers on the street. These are all happening to you, and you take them all into your heart. You quite enjoy it actually, just by yourself, without Taylor, the reason for you to be here in the first place, but, hey, this is how the city happens to you, right?
+
+In fours hours, you pretty much walked around the entire Chicago downtown. Tired but refreshed, you are sitting at a coffee shop for a warm drink, and Taylor is ringing you.
+
+&quot;Hey I&#39;m done!&quot; Taylor is in a high spirit, &quot;Do you want to go somewhere?&quot;
+
+&quot;Hey yeah sure.&quot; You&#39;ve been to pretty much everywhere, you think to yourself, &quot;where do you want to go?&quot;
+
+&quot;Let&#39;s meet first! I have a surprise for at 7, so let&#39;s get together to plan something between now and then!&quot;
+
+&quot;Sounds good!&quot; 
+
+[[surprise]]? That would be nice.</tw-passagedata><tw-passagedata pid="14" name=" not planned" tags="omitted-for-prototype" position="669,1562" size="100,100">[[surprise]]</tw-passagedata><tw-passagedata pid="15" name="surprise" tags="omitted-for-prototype" position="523,1709" size="100,100">7 o&#39;clock, Taylor is sitting across the table, smiling.
+
+&quot;I know you like Beef Wellington, and they make the best, so I booked us a dinner here.&quot; Taylor looks at you, full of expectation.
+
+This really is a famous place, with fancy decorations and hard-to-get reservations. You know this because you tried to book this place as well, but the reservation was full already.
+
+&quot;I booked this place immediately after we booked our flights here! I knew you would love it!&quot; Taylor adds.
+
+&quot;Thank you! I do love it, a lot actually! I already feel the telepathy between my guts and the beef!&quot; Your excitement validates Taylor&#39;s expectations.
+
+Over the well-deserved reputable beef, you talk and drink, having a great time. You learn about Taylor&#39;s latest research on a Japanese film, which fascinates you, and you talk about your awkward childhood memories that put both of you in laugh. You also made plans for tomorrow, taking into account Taylor&#39;s work time of course.
+
+Just to start off the next topic, you ask Taylor, &quot;What is the most memorable thing for you since we&#39;ve been together? About us.&quot;
+
+&quot;Hmmm, this is a hard one.&quot; Taylor takes a sip and contemplates for a while. &quot;I think it is probably the time you work from New York for a week for my birthday. I don&#39;t work, but I would guess it is a pretty hard thing to ask from your manager. And I was busy with my finals that week, so I didn&#39;t have much time for you, but sometimes just seeing you there makes me feel assured and peaceful. Although we didn&#39;t celebrate that much, that was one of the best birthdays I ever had.&quot;
+
+You have mixed feelings hearing this, because you sweared to yourself you would never do that again. You basically spent all that week either waiting in the dorm or studying with Taylor in the library. The birthday night was a disappointment for you as well -- you planned everything, a restaurant, a gift, and a cake. You were expecting a sweet evening, but it all finished in 2 hours because it just felt Taylor&#39;s mind was not there. Now you hear this, you say
+
+[[I had a wonderful time too that week! -&gt; wonderful time]]
+[[I&#39;m glad you enjoyed that week. -&gt; glad]]
+[[Actually...I sweared to myself I would never do that again, but now I&#39;m not sure anymore. -&gt; truth]]</tw-passagedata><tw-passagedata pid="16" name=" wonderful time" tags="hacked" position="373,1859" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-3,
+	$taylorSatisfaction to $taylorSatisfaction-2
+)
+
+As your tongue utters the last syllable of this sentence, &quot;I had a wonderful time too&quot;, a sudden urge of grievance rises in your heart. You don&#39;t have a mirror right now but if you do you would see the weirdest smile on your face -- your mouth tilting up but your eyes mournful. You probably sound weird too.
+
+You had similar feelings so many times with Taylor, but you just let it pass by so many times. This is probably the first time you catch it and observe it. You see yourself making one after another small tiny compromises, and each one makes you lose a tiny piece of yourself. They are like dusts, falling invisibly through the air, but accumulating over time and eventually they will cover the luster of your true feelings.
+
+You don&#39;t know if you should quickly adjust your facial expression to pretend nothing happened inside you so that this dinner happily goes on, or actually address this feeling with Taylor, face to face. The silence over your ambivalence is awkward, and it further intensifies your ambivance.
+
+Obviously Taylor smells this awkward air as well. &quot;Are you okay?&quot; Taylor asks, mixing confusion and care in the voice.
+
+[[I&#39;m totally fine! I just felt like I wanted to sneeze, but I also felt it is not polite, so I tried to fight it... Oh man that&#39;s awkward -&gt; I&#39;m totally fine]]
+
+~~I actually didn&#39;t have such a great time that week~~.</tw-passagedata><tw-passagedata pid="17" name=" glad" tags="omitted-for-prototype" position="523,1859" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name=" truth" tags="hack" position="673,1859" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-2,
+	$taylorSatisfaction to $taylorSatisfaction-3
+)
+
+You speak calmly in a low voice, and unsurprisingly Taylor is surprised.
+
+&quot;Oh really? Do you want to talk about it?&quot;
+
+&quot;I think it&#39;s just the recurring theme between us that we make plans that would make both of us happy, and for one reason or another the plans never get carried out. When we change plan, some compromises need to be made and I feel like they are mostly made on my side.&quot;
+
+&quot;Yes you did make compromises. I really appreciate them and I don&#39;t take them for granted, but I make compromises too. Like this conference, I&#39;m not supposed to be here because my department won&#39;t sponsor it. I had to find another department to sponsor me to be at the events for just one day and push off all other meetings for the weekend just to be with you.&quot;
+
+In your heart, you start to put each of your compromises on a balance and see which side outweigh the other, but then you think to yourself, &quot;is it just the nature of relationship? Weighing each other&#39;s compromises?&quot;
+
+&quot;I really like you being open about your feelings though.&quot; Taylor adds. &quot;I think we should all do that. I would never know how you felt about that week without today, and knowing it means a lot to me.&quot; Taylor reaches out and holds your hand while saying this.
+
+&quot;Okay. I can do that. &quot; Maybe weighing compromises really is the nature of relationship, but at least we can weigh them openly on the table. With this thought, you kind of accept this. It feels like this acceptance requires putting down something, but at the moment you don&#39;t know what is it.
+
+&quot;I can already see us having a lot of difficult conversations. Are you ready for those?&quot; You adds.
+
+&quot;Difficult but positive ones. And yes I&#39;m ready.&quot; Taylor squeezes your hand to show affirmation. 
+
+You almost feel genuinely happy at this moment. It is not the happiness from a perfect resolution, but the happiness from a way out, a change, or an acceptance of inperfection. As Taylor said, maybe happiness comes from [[positivity]] ahead of you.
+
+You two finish your dinner, have a couple more drinks, and even go to a bar together afterwards. Taylor rarely goes to a bar. You can tell the excitement inside Taylor tonight.</tw-passagedata><tw-passagedata pid="19" name="positivity" tags="" position="678,2011" size="100,100">When you open your eyes the next morning, it is already 11 o&#39;clock. Last night you came back at 2 AM, drunk, so you don&#39;t even remember if any of you set an alarm. Your plan was to have Taylor work in the morning, have a late lunch, and then go to visit the Field Museum together, but obviously this is no happening. 
+
+You wake up Taylor because checkout is at 12. You quickly tidy yourselves up, pack your luggages, and checked out the room. Sitting in the hotel lobby, Taylor looks gloomy.
+
+As you try to find something to eat first, Taylor goes, &quot;hey, after we eat, do you mind going to the museum by yourself?&quot;
+
+The second you looked at your clock, you knew this is coming. Positivity. Being open about your feelings. These things fly around in your mind. You also recalled the moment Taylor held your hand last night. The warmth and gentleness. You don&#39;t know if your feelings inflicted with these memories are still true to yourself, but anyway, you say
+
+[[Yeah, sure. No problem.]]
+
+[[I don&#39;t want to go by myself.]]</tw-passagedata><tw-passagedata pid="20" name="Yeah, sure. No problem." tags="" position="630,2155" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="I don&#39;t want to go by myself." tags="" position="776,2156" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction,
+	$taylorSatisfaction to $taylorSatisfaction-2
+)
+
+Taylor is stunned for a second by your reaction.
+
+&quot;Sorry I should probably put it better, but I was just being open about my feelings, like we discussed yesterday.&quot;
+
+&quot;You did the right thing, but I really need to get this done. I&#39;m sorry I cannot spend more time with you. I&#39;m just being honest too.&quot;
+
+&quot;That&#39;s okay. I will go myself. Let&#39;s get something to eat.&quot;
+
+&quot;Let&#39;s [[go -&gt; bad day]].&quot;</tw-passagedata><tw-passagedata pid="22" name=" I&#39;m totally fine" tags="" position="371,2012" size="100,100">&quot;You are so silly!&quot; Taylor laughs at you.
+
+&quot;Yeah I know.&quot; You laugh back, bitterly.
+
+All of a sudden you feel tired. Just thinking that you still have to keep staying at the dinner exhausts you. How long does it have to be? For the first time ever you want to be alone while Taylor is here with you.
+
+You finish your food as quickly as you can, without showing you are rushing of course. After dinner, you directly head back to the hotel, to the bed.
+
+Lying on the bed quietly, you just feel relaxed. It&#39;s good to be just with yourself, even if Taylor is lying right next to you.
+
+[[Next morning]]</tw-passagedata><tw-passagedata pid="23" name="Next morning" tags="" position="371,2162" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction+2,
+	$taylorSatisfaction to $taylorSatisfaction+2,
+	$timeSpentTogether to $timeSpentTogether+4
+)
+The first thing you see when you wake up is Taylor gently looking at you.
+
+&quot;Good morning.&quot; Taylor greets.
+
+&quot;Good morning. How long you&#39;ve been awake?&quot;
+
+&quot;Just a little bit.&quot; Taylor keeps the tender eyes fixed on you, &quot;You slept so peacefully.&quot; 
+
+&quot;Haha yeah I had a good sleep.&quot;
+
+&quot;I have a good news. I don&#39;t need to work today anymore. We can spend all day together.&quot;
+
+After yesterday, you really didn&#39;t see this coming. &quot;Are you sure?&quot;
+
+&quot;Yes.&quot; Taylor affirms. &quot;We are here to spend time together, so that&#39;s what we need to do.&quot;
+
+&quot;That&#39;s...great!&quot; You don&#39;t even know how to react.
+
+&quot;Let&#39;s get up and get something to eat first. I&#39;m starving!&quot;
+
+&quot;Let&#39;s [[go -&gt; good day]]!&quot;</tw-passagedata><tw-passagedata pid="24" name=" good day" tags="" position="371,2312" size="100,100">This is definitely one the best days you spent with Taylor, you think to yourself, sitting at the airport waiting to board your plane. Taylor is already in the air, and you are by yourself again.
+
+The feeling of desperately wanting to be alone last night already feels extremely distant, but it is only less than 24 hours ago. Thinking about this weekend, you cannot decide which feeling is truer: last night&#39;s bitterness, grievance, and sudden revelation when realizing something has been covered by &quot;dust&quot; for such a long time, or today&#39;s genuine happiness. Which one better describes your relationship with Taylor, and which one is only the ephemeral impulse? You honestly don&#39;t know.
+
+You also don&#39;t know when is the next time you will see Taylor, and how would the next meeting shift this balance. Here it comes the philosophical question.
+
+Ask yourself from the bottom of your heart, [[do you miss Taylor]]?</tw-passagedata><tw-passagedata pid="25" name=" bad day" tags="" position="776,2306" size="100,100">This may not be such a bad day, you think to yourself, sitting at the airport waiting to board your plane. Taylor is already in the air, and you are by yourself again.
+
+You have the feeling that you are at a new start again -- a new start with unknown destination. You had it last night and you felt genuinely happy, but you have more complex feelings at this moment. 
+
+Maybe it&#39;s not that complex. Maybe you just don&#39;t know you like the new start or not. You don&#39;t know you and Taylor are getting closer or further away after this new start, and you also don&#39;t know how you feel about either of the two outcomes. You honestly don&#39;t know.
+
+You wonder when is the next time you will see Taylor, and how would the next meeting shift this balance. And finally here comes the philosophical question.
+
+Ask yourself from the bottom of your heart, [[do you miss Taylor]]?</tw-passagedata><tw-passagedata pid="26" name="do you miss Taylor" tags="hack" position="579,2496" size="100,100">An announcement breaks your thought: your boarding group is called.
+
+This trip is coming to an end. It may feel a long time, but it is only a weekend. You come from a life without Taylor, and now you are going back to it. But wait, isn&#39;t this true regardless who the person is?
+
+The plane takes off, from this crossroad in your life -- one of many with Taylor and everyone else.
+
+(if: $communication is &#39;i&#39;)[
+Gradually you learn, dust is just part of the world. All you can do is to wipe it from time to time, so that is what you do and it is actually not that hard to make a habit of it.
+
+Taylor becomes part of your habit too. After this trip, you meet regularly, spend weekends and vacations here and there, celebrate each other&#39;s birthdays. Some of these meetings go better than the others, but once it becomes a habit, you don&#39;t make a big deal out if it.
+] (else:) [
+Next time you see Taylor is the next summer. It is the longest meeting interval you&#39;ve ever had.  
+
+The more open you become about each other, the more separated you feel about each other. It&#39;s not even because you two are such different people, the openness actually confirmed you feel the same way about so many things, including your feeling of separation. You know and understand more and more about each other, but you just stop feeling like a couple. Neither of you cannot explain it. 
+
+You two break up after that summer, peacefully and tacitly, and you still talk to each other, and you still talk openly.
+]
+
+(END)</tw-passagedata><tw-passagedata pid="27" name="Wait where are are and keep calling." tags="" position="295,538" size="100,100">Still no response.
+
+You are waiting near the gate at the terminal. Most stores have closed. Only a few people scatter around you. They are probably spending the night here.
+
+[[keep calling]]
+[[Get a Uber to hotel. -&gt; to the hotel]]</tw-passagedata><tw-passagedata pid="28" name=" to the hotel" tags="" position="734,530" size="100,100">(set: 
+	$callMade to 17,
+	$haveTalkedToFrontDesk to false
+)
+
+
+You keep calling on the way, but still no response. 
+
+You arrive at the hotel. You ask the front desk lady for Taylor&#39;s room number, but she won&#39;t give it to you. She agrees to call Taylor&#39;s room -- the room phone should be pretty loud, but still no answer.
+
+[[Keep calling]]
+[[Keep talking to the front desk lady]]
+[[Just wait in the lobby]]</tw-passagedata><tw-passagedata pid="29" name="keep calling" tags="" position="450,596" size="100,100">No response.
+
+It&#39;s the first time you see such a quiet airport. A few people have fell asleep on the seats.
+
+The last store closes in front of you.
+
+[[Get to hotel. -&gt; to the hotel]]</tw-passagedata><tw-passagedata pid="30" name="Keep calling" tags="" position="566,669" size="100,100">(set: 
+	$callMade to $callMade+1
+)
+
+
+No response.
+
+You&#39;ve made $callMade calls.
+
+[[Keep calling -&gt;keep calling 2]]
+[[Talk to the front desk again -&gt;Keep talking to the front desk lady]]
+[[Just wait in the lobby]]</tw-passagedata><tw-passagedata pid="31" name="Keep talking to the front desk lady" tags="" position="739,666" size="100,100">(set: 
+	$haveTalkedToFrontDesk to true
+)
+
+&quot;I&#39;m sorry. I really cannot disclose our customer information.&quot;
+
+You take out your credit card, &quot;I use this card to reserve Taylor&#39;s room. Can you verify that and tell me the room number?&quot;
+
+&quot;I&#39;m sorry. I cannot do that.&quot;
+
+[[Keep calling -&gt;keep calling 2]]
+[[Just wait in the lobby]]</tw-passagedata><tw-passagedata pid="32" name="Just wait in the lobby" tags="" position="927,661" size="100,100">
+
+You sit on the couch, awkwardly face to face with the front desk lady. 
+
+You get up to walk around the lobby.
+
+And you sit again.
+
+It&#39;s 1:30 AM.
+
+[[Keep waiting here]]
+[[Call again-&gt;keep calling 2]]
+(if: $haveTalkedToFrontDesk is false)[[[Talk to the front desk again-&gt;Keep talking to the front desk lady]]]
+</tw-passagedata><tw-passagedata pid="33" name="Keep waiting here" tags="" position="941,814" size="100,100">Every minute feels like forever.
+
+1:33 AM
+
+[[Call again-&gt;keep calling 2]]</tw-passagedata><tw-passagedata pid="34" name="keep calling 2" tags="" position="737,825" size="100,100">(set: 
+	$callMade to $callMade+1
+)
+
+
+$callMade calls.
+
+[[...]]</tw-passagedata><tw-passagedata pid="35" name="..." tags="" position="896,941" size="100,100">&quot;Hey, execume me?&quot;
+
+It&#39;s the front desk lady talking to you.
+
+&quot;I will have a security guard take you to the room and check it out, but you have to leave if the guest in the room don&#39;t want to see you. Okay?&quot;
+
+[[&quot;Okay!&quot;]]</tw-passagedata><tw-passagedata pid="36" name="&quot;Okay!&quot;" tags="" position="741,955" size="100,100">Knock, knock...
+
+Knock, knock...
+
+Knock, knock...
+
+After the thrid round of knocking, finally there is sound from inside. 
+
+The door opens up, and Taylor appears, with messy hair and droopy eyes. With an interesting facial expression combining surprise and guilt, Taylor lets you [[in]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
