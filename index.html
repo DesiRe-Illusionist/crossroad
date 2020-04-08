@@ -54,32 +54,26 @@
   color: #7c838f; 
   font-weight: bold; 
   text-decoration: line-through
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Next day" tags="" position="521,1422" size="100,100">You two are having breakfast at a popular local place. The weather is refreshingly chill and clear, and the food is delicious, warm, and comforting.
+}
 
-You are thinking about where to go after this. Maybe some outdoor places would be great for such a great weather.
+.fade-in {
+  animation: fadeIn;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+}
 
-&quot;Hey I was thinking...I probably will need some time to do some school work today and tomorrow.&quot;
+@keyframes fadeIn {
+  0% { 
+  	opacity: 0;
+  }
+  100% {
+  	opacity: 1;
+  }
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Next day" tags="" position="521,1422" size="100,100">You two are having breakfast at a popular local place. The weather is refreshingly chill and clear, and the food is delicious, warm, and comforting. You can&#39;t ask for a better start of a Saturday.
 
-&quot;Okay. How much time do you need?&quot;
+As you think about whether to go to outdoor parks for the weather or to the museum for the special exhibition, Taylor starts,
 
-&quot;About 4 hours a day?&quot;
-
-Taylor adds, &quot;You can totally go to some of the places without me if you like. I can be with you for the rest of the time.&quot;
-
-(if: $communication is &#39;i&#39;)[
-[[That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have book on my list for a long time. Finally I can cross it off. -&gt; compromise]]
-
-[[That&#39;s fine. I will just walk around the city after this. -&gt; walk]]
-
-~~Okay, but you know this is not planned right? We both agreed to spend time with each other, for just one weekend. ~~
-]
-(else:)[
-~~That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have book on my list for a long time. Finally I can cross it off.~~
-
-[[That&#39;s fine. I will just walk around the city after this. -&gt; walk]]
-
-[[Okay, but you know this is not planned right? We both agreed to spend time with each other, for just one weekend. -&gt; not planned]]
-]</tw-passagedata><tw-passagedata pid="2" name="Welcome" tags="" position="599,31" size="100,100">Hey traveler,
+[[&quot;Hey I was thinking...]]</tw-passagedata><tw-passagedata pid="2" name="Welcome" tags="" position="599,31" size="100,100">Hey traveler,
 
 This story is about relationships, and relationships are tricky. They are full of blind spots, compromises, egos, and inexplicable feelings. Once you enter a relationship, you may not be whoever you want to be, so now you have a chance to choose your character&#39;s personality in two questions.
 
@@ -193,67 +187,30 @@ You haven&#39;t met each other for a long time, so you really want to catch up, 
 
 Taylor goes into the bathroom to brush teeth and get ready for bed, so you do the same. This isn&#39;t the reunion you expected, but that&#39;s okay, you say to yourself.
 
-[[Next day]]</tw-passagedata><tw-passagedata pid="12" name=" compromise" tags="" position="446,1879" size="100,100">(set: 
+[[Next day]]</tw-passagedata><tw-passagedata pid="12" name=" compromise" tags="" position="441,1572" size="100,100">(set: 
 	$playerSatisfaction to $playerSatisfaction-3,
 	$timeSpentTogether to $timeSpentTogether+2
 )
 
 &quot;Really?! Thank you so much!&quot;
 
-&quot;Not an issue. Let&#39;s find a nice cafe nearby!&quot;
-
-In the cafe, while Taylor is studying, you are mostly just holding your book and staring outside of the window. The coffee brewing smell is nice, and the morning sunshine cast onto the desk, onto Taylor, and onto your book also feels warm. The book is indeed on your list, and you do want to read it some time, but not right now -- you just cannot concentrate on it. Right now, looking at people walking by and going to places, you almost don&#39;t know if you want to join them. You ask yourself, shouldn&#39;t you feel calm, peaceful, and content to spend time reading a good book, in a nice place, with Taylor? You are not sure if you are actually feeling that way or you just tell yourself you should feel that way. Maybe something is missing.
-
-&quot;Hey.&quot; Taylor calls you back from random thoughts, &quot;I&#39;m done. Let&#39;s go somewhere!&quot;
-
-&quot;Is it already 4 hours?&quot;
-
-&quot;Yeah, almost. Were you just day-dreaming for 4 hours?&quot; Taylor laughs.
-
-You look around. the morning sunshine has turned into afternoon sunshine. It has indeed been a while.
-
-&quot;Haha maybe. Where do you want to go?&quot;
-
-&quot;Up to you. Anywhere you feel like going the most! The rest of the day is ours!&quot; Taylor has a high spirit. &quot;But let&#39;s finish before 7. I have a [[surprise]] for you.&quot;</tw-passagedata><tw-passagedata pid="13" name=" walk" tags="" position="593,1889" size="100,100">(set: 
+&quot;Let&#39;s find a nice [[cafe]] nearby!&quot;</tw-passagedata><tw-passagedata pid="13" name=" walk" tags="" position="641,1581" size="100,100">(set: 
 	$playerSatisfaction to $playerSatisfaction-2,
 	$taylorSatisfaction to $taylorSatisfaction-2
 )
 
-&quot;Sounds good! I think I&#39;m just gonna find a nice cafe and study there, and I will just call you when I&#39;m done.&quot;
+Exiting the door of the restaurant, you and Taylor turn to different directions. 
 
-&quot;Okay.&quot;
+You walk cross the DuSable Bridge to the Magnificent Mile. The wind, the chill, the busy passengers, and the kids playing in the parks, their presence occupies you and clears your mind. You quite enjoy your walk actually.
 
-&quot;Do you know where do you want to go?&quot;
+You turn east to the lake and then walk down to Millennium Park. There are ducks by the lake, and many people crowd at the Cloud Gate to take pictures. A couple ask you to take a picture for them, and only then you realize -- you could have been here with Taylor, the very reason for you to be in Chicago in the first place, who has not come to your mind for the entire afternoon.
 
-&quot;Not really. I will probably just walk around and see where the city takes me. You know, let the city happen to me.&quot;
-
-&quot;Haha that&#39;s nice!&quot;
-
-After breakfast, you and Taylor head to different directions. You are doing exactly what you said -- let the city happen to you. Its wind, its chill, its shadows between the high-raise buildings, and its busy passengers on the street. These are all happening to you, and you take them all into your heart. You quite enjoy it actually, just by yourself, without Taylor, the reason for you to be here in the first place, but, hey, this is how the city happens to you, right?
-
-In fours hours, you pretty much walked around the entire Chicago downtown. Tired but refreshed, you are sitting at a coffee shop for a warm drink, and Taylor is ringing you.
-
-&quot;Hey I&#39;m done!&quot; Taylor is in a high spirit, &quot;Do you want to go somewhere?&quot;
-
-&quot;Hey yeah sure.&quot; You&#39;ve been to pretty much everywhere, you think to yourself, &quot;where do you want to go?&quot;
-
-&quot;Let&#39;s meet first! I have a surprise for at 7, so let&#39;s get together to plan something between now and then!&quot;
-
-&quot;Sounds good!&quot; 
-
-[[surprise]]? That would be nice.</tw-passagedata><tw-passagedata pid="14" name=" not planned" tags="omitted-for-prototype" position="669,1562" size="100,100">(set: 
-	$playerSatisfaction to $playerSatisfaction-2,
-	$taylorSatisfaction to $taylorSatisfaction-4,
-	$timeSpentTogether to $timeSpentTogether+1
-)
-
+As you take the picture, your phone [[rings]].</tw-passagedata><tw-passagedata pid="14" name=" not planned" tags="omitted-for-prototype" position="951,1568" size="100,100">
 &quot;Yeah I know. I&#39;m sorry, but I just can&#39;t afford to spend entire weekend doing nothing. I wish I could.&quot;
 
 [[I&#39;m a little upset because I really had a high expectation of this weekend.]]
 [[Okay. What do you want me to do then?]]
-[[Don&#39;t apologize, I understand. Let&#39;s just take this into consideration when we plan for the next time.]]
-
-[[surprise]]</tw-passagedata><tw-passagedata pid="15" name="surprise" tags="omitted-for-prototype" position="592,2027" size="100,100">7 o&#39;clock, Taylor is sitting across the table, smiling.
+[[Don&#39;t apologize, I understand. Let&#39;s just take this into consideration when we plan for the next time.]]</tw-passagedata><tw-passagedata pid="15" name="surprise" tags="omitted-for-prototype" position="667,2302" size="100,100">7 o&#39;clock, Taylor is sitting across the table, smiling.
 
 &quot;I know you like Beef Wellington, and they make the best, so I booked us a dinner here.&quot; Taylor looks at you, full of expectation.
 
@@ -273,7 +230,7 @@ You have mixed feelings hearing this, because you sweared to yourself you would 
 
 [[I had a wonderful time too that week! -&gt; wonderful time]]
 [[I&#39;m glad you enjoyed that week. -&gt; glad]]
-[[Actually...I sweared to myself I would never do that again, but now I&#39;m not sure anymore. -&gt; truth]]</tw-passagedata><tw-passagedata pid="16" name=" wonderful time" tags="hacked" position="447,2176" size="100,100">(set: 
+[[Actually...I sweared to myself I would never do that again, but now I&#39;m not sure anymore. -&gt; truth]]</tw-passagedata><tw-passagedata pid="16" name=" wonderful time" tags="hacked" position="522,2452" size="100,100">(set: 
 	$playerSatisfaction to $playerSatisfaction-3,
 	$taylorSatisfaction to $taylorSatisfaction-2
 )
@@ -288,7 +245,7 @@ Obviously Taylor smells this awkward air as well. &quot;Are you okay?&quot; Tayl
 
 [[I&#39;m totally fine! I just felt like I wanted to sneeze, but I also felt it is not polite, so I tried to fight it... Oh man that&#39;s awkward -&gt; I&#39;m totally fine]]
 
-~~I actually didn&#39;t have such a great time that week~~.</tw-passagedata><tw-passagedata pid="17" name=" glad" tags="omitted-for-prototype" position="592,2177" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name=" truth" tags="hack" position="742,2148" size="100,100">(set: 
+~~I actually didn&#39;t have such a great time that week~~.</tw-passagedata><tw-passagedata pid="17" name=" glad" tags="omitted-for-prototype" position="667,2453" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name=" truth" tags="hack" position="817,2424" size="100,100">(set: 
 	$playerSatisfaction to $playerSatisfaction-2,
 	$taylorSatisfaction to $taylorSatisfaction-3
 )
@@ -313,7 +270,7 @@ In your heart, you start to put each of your compromises on a balance and see wh
 
 You almost feel genuinely happy at this moment. It is not the happiness from a perfect resolution, but the happiness from a way out, a change, or an acceptance of inperfection. As Taylor said, maybe happiness comes from [[positivity]] ahead of you.
 
-You two finish your dinner, have a couple more drinks, and even go to a bar together afterwards. Taylor rarely goes to a bar. You can tell the excitement inside Taylor tonight.</tw-passagedata><tw-passagedata pid="19" name="positivity" tags="" position="708,2329" size="100,100">When you open your eyes the next morning, it is already 11 o&#39;clock. Last night you came back at 2 AM, drunk, so you don&#39;t even remember if any of you set an alarm. Your plan was to have Taylor work in the morning, have a late lunch, and then go to visit the Field Museum together, but obviously this is no happening. 
+You two finish your dinner, have a couple more drinks, and even go to a bar together afterwards. Taylor rarely goes to a bar. You can tell the excitement inside Taylor tonight.</tw-passagedata><tw-passagedata pid="19" name="positivity" tags="" position="783,2605" size="100,100">When you open your eyes the next morning, it is already 11 o&#39;clock. Last night you came back at 2 AM, drunk, so you don&#39;t even remember if any of you set an alarm. Your plan was to have Taylor work in the morning, have a late lunch, and then go to visit the Field Museum together, but obviously this is no happening. 
 
 You wake up Taylor because checkout is at 12. You quickly tidy yourselves up, pack your luggages, and checked out the room. Sitting in the hotel lobby, Taylor looks gloomy.
 
@@ -323,7 +280,7 @@ The second you looked at your clock, you knew this is coming. Positivity. Being 
 
 [[Yeah, sure. No problem.]]
 
-[[I don&#39;t want to go by myself.]]</tw-passagedata><tw-passagedata pid="20" name="Yeah, sure. No problem." tags="" position="699,2473" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="I don&#39;t want to go by myself." tags="" position="828,2268" size="100,100">(set: 
+[[I don&#39;t want to go by myself.]]</tw-passagedata><tw-passagedata pid="20" name="Yeah, sure. No problem." tags="" position="774,2749" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="I don&#39;t want to go by myself." tags="" position="903,2544" size="100,100">(set: 
 	$playerSatisfaction to $playerSatisfaction,
 	$taylorSatisfaction to $taylorSatisfaction-2
 )
@@ -336,7 +293,7 @@ Taylor is stunned for a second by your reaction.
 
 &quot;That&#39;s okay. I will go myself. Let&#39;s get something to eat.&quot;
 
-&quot;Let&#39;s [[go -&gt; bad day]].&quot;</tw-passagedata><tw-passagedata pid="22" name=" I&#39;m totally fine" tags="" position="440,2304" size="100,100">&quot;You are so silly!&quot; Taylor laughs at you.
+&quot;Let&#39;s [[go -&gt; bad day]].&quot;</tw-passagedata><tw-passagedata pid="22" name=" I&#39;m totally fine" tags="" position="515,2580" size="100,100">&quot;You are so silly!&quot; Taylor laughs at you.
 
 &quot;Yeah I know.&quot; You laugh back, bitterly.
 
@@ -346,7 +303,7 @@ You finish your food as quickly as you can, without showing you are rushing of c
 
 Lying on the bed quietly, you just feel relaxed. It&#39;s good to be just with yourself, even if Taylor is lying right next to you.
 
-[[Next morning]]</tw-passagedata><tw-passagedata pid="23" name="Next morning" tags="" position="440,2544" size="100,100">(set: 
+[[Next morning]]</tw-passagedata><tw-passagedata pid="23" name="Next morning" tags="" position="515,2820" size="100,100">(set: 
 	$playerSatisfaction to $playerSatisfaction+2,
 	$taylorSatisfaction to $taylorSatisfaction+2,
 	$timeSpentTogether to $timeSpentTogether+4
@@ -371,13 +328,13 @@ After yesterday, you really didn&#39;t see this coming. &quot;Are you sure?&quot
 
 &quot;Let&#39;s get up and get something to eat first. I&#39;m starving!&quot;
 
-&quot;Let&#39;s [[go -&gt; good day]]!&quot;</tw-passagedata><tw-passagedata pid="24" name=" good day" tags="" position="423,2424" size="100,100">This is definitely one the best days you spent with Taylor, you think to yourself, sitting at the airport waiting to board your plane. Taylor is already in the air, and you are by yourself again.
+&quot;Let&#39;s [[go -&gt; good day]]!&quot;</tw-passagedata><tw-passagedata pid="24" name=" good day" tags="" position="498,2700" size="100,100">This is definitely one the best days you spent with Taylor, you think to yourself, sitting at the airport waiting to board your plane. Taylor is already in the air, and you are by yourself again.
 
 The feeling of desperately wanting to be alone last night already feels extremely distant, but it is only less than 24 hours ago. Thinking about this weekend, you cannot decide which feeling is truer: last night&#39;s bitterness, grievance, and sudden revelation when realizing something has been covered by &quot;dust&quot; for such a long time, or today&#39;s genuine happiness. Which one better describes your relationship with Taylor, and which one is only the ephemeral impulse? You honestly don&#39;t know.
 
 You also don&#39;t know when is the next time you will see Taylor, and how would the next meeting shift this balance. Here it comes the philosophical question.
 
-Ask yourself from the bottom of your heart, [[do you miss Taylor]]?</tw-passagedata><tw-passagedata pid="25" name=" bad day" tags="" position="828,2418" size="100,100">This may not be such a bad day, you think to yourself, sitting at the airport waiting to board your plane. Taylor is already in the air, and you are by yourself again.
+Ask yourself from the bottom of your heart, [[do you miss Taylor]]?</tw-passagedata><tw-passagedata pid="25" name=" bad day" tags="" position="903,2694" size="100,100">This may not be such a bad day, you think to yourself, sitting at the airport waiting to board your plane. Taylor is already in the air, and you are by yourself again.
 
 You have the feeling that you are at a new start again -- a new start with unknown destination. You had it last night and you felt genuinely happy, but you have more complex feelings at this moment. 
 
@@ -385,7 +342,7 @@ Maybe it&#39;s not that complex. Maybe you just don&#39;t know you like the new 
 
 You wonder when is the next time you will see Taylor, and how would the next meeting shift this balance. And finally here comes the philosophical question.
 
-Ask yourself from the bottom of your heart, [[do you miss Taylor]]?</tw-passagedata><tw-passagedata pid="26" name="do you miss Taylor" tags="hack" position="631,2608" size="100,100">An announcement breaks your thought: your boarding group is called.
+Ask yourself from the bottom of your heart, [[do you miss Taylor]]?</tw-passagedata><tw-passagedata pid="26" name="do you miss Taylor" tags="hack" position="706,2884" size="100,100">An announcement breaks your thought: your boarding group is called.
 
 This trip is coming to an end. It may feel a long time, but it is only a weekend. You come from a life without Taylor, and now you are going back to it. But wait, isn&#39;t this true regardless who the person is?
 
@@ -472,7 +429,7 @@ It&#39;s 1:30 AM.
 
 $callMade calls.
 
-[[...]]</tw-passagedata><tw-passagedata pid="35" name="..." tags="" position="896,941" size="100,100">&quot;Hey, execume me?&quot;
+[[...]]</tw-passagedata><tw-passagedata pid="35" name="..." tags="" position="896,941" size="100,100">&quot;Hey, excuse me?&quot;
 
 It&#39;s the front desk lady talking to you.
 
@@ -494,19 +451,165 @@ As you land, you turn off airplane mode and a message from Taylor comes in, all 
 
 You directly head home because you still need to work tomorrow morning.
 
-(END)</tw-passagedata><tw-passagedata pid="38" name="Knock, knock..." tags="" position="762,1105" size="100,100">The door opens up, and Taylor appears, with messy hair and droopy eyes. With an interesting facial expression combining surprise and guilt, Taylor lets you [[in]]</tw-passagedata><tw-passagedata pid="39" name="I&#39;m a little upset because I really had a high expectation of this weekend." tags="" position="716,1720" size="100,100">&quot;I know. I had high expectation too. You know I want to spend the entire weekend with you right? I really want to.&quot;
+(END)</tw-passagedata><tw-passagedata pid="38" name="Knock, knock..." tags="" position="762,1105" size="100,100">The door opens up, and Taylor appears, with messy hair and droopy eyes. With an interesting facial expression combining surprise and guilt, Taylor lets you [[in]]</tw-passagedata><tw-passagedata pid="39" name="I&#39;m a little upset because I really had a high expectation of this weekend." tags="" position="998,1726" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-1
+)
+
+&quot;I know. I had high expectation too. You know I want to spend the entire weekend with you right? I really want to.&quot;
 
 &quot;I know.&quot;
 
 &quot;Why don&#39;t you spend some time by yourself, and I will try to wrap this up as fast as I can!&quot;
 
 [[Okay. I guess I will just take a walk around the city. -&gt; walk]]
-[[It&#39;s okay. I will stay with you, reading a book or something. -&gt; compromise]]</tw-passagedata><tw-passagedata pid="40" name="Okay. What do you want me to do then?" tags="" position="855,1718" size="100,100">&quot;You know, just spend some time on your own I guess?&quot;
+[[It&#39;s okay. I will stay with you, reading a book or something. -&gt; compromise]]</tw-passagedata><tw-passagedata pid="40" name="Okay. What do you want me to do then?" tags="" position="1137,1724" size="100,100">(set: 
+	$playerSatisfaction to $playerSatisfaction-2,
+	$taylorSatisfaction to $taylorSatisfaction-2,
+)
 
-[[Okay. I guess I will just take a walk around the city. -&gt; walk]]</tw-passagedata><tw-passagedata pid="41" name="Don&#39;t apologize, I understand. Let&#39;s just take this into consideration when we plan for the next time." tags="" position="1008,1721" size="100,100">&quot;Yeah. Thanks for understanding! What do you want to do then?&quot;
+&quot;You know, just spend some time on your own I guess?&quot;
+
+[[Okay. I guess I will just take a walk around the city. -&gt; walk]]</tw-passagedata><tw-passagedata pid="41" name="Don&#39;t apologize, I understand. Let&#39;s just take this into consideration when we plan for the next time." tags="" position="1290,1727" size="100,100">(set: 
+	$taylorSatisfaction to $taylorSatisfaction-1
+)
+
+&quot;Yeah. Thanks for understanding! What do you want to do then?&quot;
 
 [[I guess I will just take a walk around the city. -&gt; walk]]
-[[I think I still want to stay with you. I will read a book or something while you work. -&gt; compromise]]</tw-passagedata></tw-storydata>
+[[I think I still want to stay with you. I will read a book or something while you work. -&gt; compromise]]</tw-passagedata><tw-passagedata pid="42" name="cafe" tags="" position="226,1562" size="100,100">(set: 
+	$readBook to false,
+	$lookAtTaylor to false,
+	$lookAtStreet to false
+)
+
+
+It is a warm and cozy cafe. You and Taylor take two window seats facing the street. The coffee brewing smell is nice, and the morning sunshine casts onto the desk, onto Taylor, onto your hand and your book.
+
+You try to read your book, but you can&#39;t concentrate. Taylor is writing something on computer, very focused. The steam from your coffee is dancing in its own rhythm, and you are just staring at it in a daze until you realize.
+
+[[Try to read your book again.]]
+[[Look at Taylor.]]
+[[Look at the street.]]</tw-passagedata><tw-passagedata pid="43" name="Try to read your book again." tags="" position="106,1685" size="100,100">(set: 
+	$readBook to true
+)
+
+
+You open your book again and try to pick up where you left off. Words go through your mind meaninglessly as if something is occupying your mind and refusing to let in anything else.
+
+Aren&#39;t you supposed to feel calm and peaceful here in such a nice place, with Taylor? You ask yourself so.
+
+(if: $lookAtTaylor is false)[
+	[[Look at Taylor.]]
+] (if: $lookAtStreet is false)[
+	[[Look at the street.]]
+] (if: $readBook is false) [
+	[[Try to read your book again.]]
+]
+
+(if: $lookAtTaylor and $lookAtStreet and $readBook)[
+
+  &lt;div class=&quot;fade-in&quot;&gt;
+  	[[&quot;Hey.&quot;]]
+  &lt;/div&gt;
+
+]</tw-passagedata><tw-passagedata pid="44" name="Look at Taylor." tags="" position="233,1727" size="100,100">(set: 
+	$lookAtTaylor to true
+)
+
+
+You put down your book, hold your coffee cup with both hands, and turn your head to Taylor, who is totally focused on working as if you don&#39;t exist.
+
+You look at Taylor&#39;s eye lashes, Taylor&#39;s white sweater, and Taylor&#39;s hands  gently hitting the keyboards. This person looks intimate to you but also feels somewhat distant.
+
+(if: $lookAtTaylor is false)[
+	[[Look at Taylor.]]
+] (if: $lookAtStreet is false)[
+	[[Look at the street.]]
+] (if: $readBook is false) [
+	[[Try to read your book again.]]
+]
+
+(if: $lookAtTaylor and $lookAtStreet and $readBook)[
+
+  &lt;div class=&quot;fade-in&quot;&gt;
+  	[[&quot;Hey.&quot;]]
+  &lt;/div&gt;
+
+]</tw-passagedata><tw-passagedata pid="45" name="Look at the street." tags="" position="379,1742" size="100,100">(set: 
+	$lookAtStreet to true
+)
+
+
+Looking at people walking by and going to places, some smiling, some all serious, most emotionless, you wonder what would it look like if you and Taylor were walking on the street. How would people look at you two? In an alternative universe, you could be walking on this street right now. Would you be happier there?
+
+(if: $lookAtTaylor is false)[
+	[[Look at Taylor.]]
+] (if: $lookAtStreet is false)[
+	[[Look at the street.]]
+] (if: $readBook is false) [
+	[[Try to read your book again.]]
+]
+
+(if: $lookAtTaylor and $lookAtStreet and $readBook)[
+
+  &lt;div class=&quot;fade-in&quot;&gt;
+  	[[&quot;Hey.&quot;]]
+  &lt;/div&gt;
+
+]</tw-passagedata><tw-passagedata pid="46" name="&quot;Hey.&quot;" tags="" position="315,1883" size="100,100">Taylor&#39;s voice draws you back from your thoughts, &quot;I&#39;m done!&quot;
+
+You look around. The morning sunshine has turned into afternoon sunshine. It has indeed been a while.
+
+&quot;Excellent!&quot;
+
+&quot;Do you want to go somewhere?&quot; Taylor is excited.
+
+&quot;Sure. Where do you want to go?&quot;
+
+&quot;Anywhere you like! We have until 7 because I have a [[surprise -&gt; End of demo testing.]] for you!&quot;</tw-passagedata><tw-passagedata pid="47" name="rings" tags="" position="641,1731" size="100,100">&quot;Hey I&#39;m done!&quot; Taylor is in a high spirit, &quot;How are you doing?&quot;
+
+[[I&#39;m doing great! I pretty much walk around the entire city!]]
+[[Alright. Just have been wandering around.]]</tw-passagedata><tw-passagedata pid="48" name="I&#39;m doing great! I pretty much walk around the entire city!" tags="" position="567,1857" size="100,100">&quot;Cool! Do you want to come to meet me? We can hang our for a bit and I have a surprise for you at 7!&quot;
+
+[[surprise -&gt; End of demo testing.]]? That would be nice.</tw-passagedata><tw-passagedata pid="49" name="Alright. Just have been wandering around." tags="" position="716,1866" size="100,100">&quot;Cool! Do you want to come to meet me? We can hang our for a bit and I have a surprise for you at 7!&quot;
+
+[[surprise -&gt; End of demo testing.]]? That would be nice.</tw-passagedata><tw-passagedata pid="50" name=" End of demo testing." tags="" position="525,2014" size="100,100">End of demo testing.</tw-passagedata><tw-passagedata pid="51" name="&quot;Hey I was thinking..." tags="" position="678,1419" size="100,100">&quot;I probably will need some time to do some school work today and tomorrow.&quot;
+
+&quot;Okay. How much time do you need?&quot;
+
+&quot;About 4 hours a day?&quot;
+
+Taylor adds, &quot;You can totally go to some of the places without me if you like. I can be with you for the rest of the time.&quot;
+(if: $communication is &#39;i&#39;)[
+	(if: $relationshipView is 1)[
+		[[That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have a book on my list for a long time. Finally I can cross it off. -&gt; compromise]]
+	  	&lt;div class=&quot;fade-out&quot;&gt;
+	  		[[That&#39;s fine. I will just walk around the city after this. -&gt; walk]]
+		&lt;/div&gt;
+		&lt;div class=&quot;strike-through&quot;&gt;[Okay, but you know this is not planned right? We both agreed to spend time with each other, for just one weekend.]
+		&lt;/div&gt;	
+	] (else:) [
+		&lt;div class=&quot;fade-out&quot;&gt;
+	  		[[That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have a book on my list for a long time. Finally I can cross it off. -&gt; compromise]]
+	  	&lt;/div&gt;
+	  	[[That&#39;s fine. I will just walk around the city after this. -&gt; walk]]
+		
+		&lt;div class=&quot;strike-through&quot;&gt;[Okay, but you know this is not planned right? We both agreed to spend time with each other, for just one weekend.]			&lt;/div&gt;
+	]
+]
+(else:)[
+	(if: $relationshipView is 1) [
+		[[That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have a book on my list for a long time. Finally I can cross it off. -&gt; compromise]]
+		
+		&lt;div class=&quot;strike-through&quot;&gt;That&#39;s fine. I will just walk around the city after this.&lt;/div&gt;
+		[[Okay, but you know this is not planned right? We both agreed to spend time with each other, for just one weekend. -&gt; not planned]]
+	] (else:) [
+		&lt;div class=&quot;strike-through&quot;&gt;That&#39;s not a problem! Let&#39;s find a nice cafe and study together. I have a book on my list for a long time. Finally I can cross it off.&lt;/div&gt;
+		[[That&#39;s fine. I will just walk around the city after this. -&gt; walk]]
+		
+		&lt;div class=&quot;fade-out&quot;&gt;[[Okay, but you know this is not planned right? We both agreed to spend time with each other, for just one weekend. -&gt; not planned]]&lt;/div&gt;
+	]
+]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
