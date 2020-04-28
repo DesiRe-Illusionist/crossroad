@@ -1,0 +1,61 @@
+.fade-out tw-link {
+  animation: text-fade 15s both linear;
+}
+
+.fade-out {
+  position: relative;  
+  overflow: hidden;
+  display: inline-block;
+}
+
+.fade-out:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 100%;
+  bottom: 16px;
+  background: #4068e0;
+  height: 2px;
+  animation: strike-line 15s both linear;
+}
+
+@keyframes strike-line {
+  100% {
+    right: 0;
+    background: #363636;
+  }
+}
+
+@keyframes text-fade {
+  99% {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  100% {
+    color: #363636;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.strike-through {
+  color: #363636; 
+  font-weight: bold; 
+  text-decoration: line-through
+}
+
+.fade-in {
+  animation: fadeIn;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% { 
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
